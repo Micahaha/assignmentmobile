@@ -2,6 +2,8 @@ import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import {NavigationContainer} from '@react-navigation/native';
 import HomeScreen from '../screens/Home';
+import TabNavigator from './TabNavigator';
+import AddHostsScreen from '../screens/AddHost/Index';
 
 const Stack = createStackNavigator();
 
@@ -9,11 +11,13 @@ const Router = props => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-      <Stack.Screen
+        <Stack.Screen
           name={'Home'}
           component={HomeScreen}
           options={{headerShown: false}}
         />
+        <Stack.Screen name={'Start Scheduling!'} component={TabNavigator}/>
+        <Stack.Screen name={'Add Host'} component={AddHostsScreen}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

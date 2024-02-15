@@ -18,25 +18,18 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
     fontWeight: 'bold',
   },
-  store: {
+  price: {
     fontSize: 18,
     marginLeft: 10,
     flex: 1,
     flexWrap: 'wrap',
   },
-  date: {
+  quantity: {
     fontSize: 18,
     marginLeft: 10,
     flex: 1,
     flexWrap: 'wrap',
   },
-  priority: {
-    fontSize: 12,
-    margin: 18,
-    color: 'white',
-    flex: 1,
-    flexWrap: 'wrap',
-  }
 });
 
 export default styles;
